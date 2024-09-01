@@ -1,10 +1,12 @@
-<h2>Film List</h2>
-<ul>
-    {% for film in films %}
-    <li>
-        <strong>{{ film.title }}</strong><br>
-        Description: {{ film.description }}<br>
-        Review: {{ film.review }}
-    </li>
-    {% endfor %}
-</ul>
+<div class="container mt-5">
+    <h2 class="mb-4">Film List</h2>
+    <ul class="list-group">
+        {% for film in films %}
+        <li class="list-group-item">
+            <h5 class="mb-1">{{ film.title }}</h5>
+            <p class="mb-1">Description: {{ film.description }}</p>
+            <small>Review: {{ film.review }}</small>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

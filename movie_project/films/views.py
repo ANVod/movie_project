@@ -17,6 +17,8 @@ def film_list(request):
     films = Film.objects.all()
     return render(request, 'film_list.html', {'films': films})
 
+def home(request):
+    return render(request, 'home.html')
 
 from django.shortcuts import render
 
